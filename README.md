@@ -37,4 +37,9 @@ Each release also carries the setups themselves, `tinkerbox-setup-windows-x86_64
 
 Tinkerbox is in beta: unsigned for now, so Windows may ask once whether to run it.
 
-Licensed under the BSD-3-Clause. Copyright 2026 Vivian Voss.
+## Licence
+
+Copyright 2026 Vivian Voss. Tinkerbox and its data are under the Tinkerbox Licence 1.0
+(`LICENCE.md`): free to download, install and use, all other rights reserved. The addon Tinkerbox
+places in the game is free under the BSD-3-Clause. Parts by others keep their own licences, listed
+in `NOTICE.md`.
