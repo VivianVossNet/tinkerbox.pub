@@ -1,0 +1,4 @@
+# Copyright 2026 Vivian Voss. Code by Vivian Voss. Licensed under the Tinkerbox Licence 1.0.
+# SPDX-License-Identifier: LicenseRef-Tinkerbox-1.0
+# Scope: Only the beta report opens an issue on VivianVossNet/tinkerbox.pub ({K0197}).
+blank_issues_enabled: false
