@@ -41,7 +41,7 @@ body:
     id: log
     attributes:
       label: "Debug-Log"
-      description: "Am einfachsten: Tinkerbox → Einstellungen → Debug-Log → »Fehler melden«, das füllt dieses Feld. Oder dort »Kopieren« und hier unverändert einfügen. Ohne den Meldeschlüssel darin wird die Meldung automatisch geschlossen. / Easiest: Tinkerbox → »Einstellungen« → »Debug-Log« → »Fehler melden« fills this field. Or »Kopieren« there and paste it here unchanged. Without the report key in it the report is closed automatically."
+      description: "Tinkerbox → Einstellungen → Debug-Log → »Fehler melden« legt die Meldung in die Zwischenablage und öffnet dieses Formular: hier unverändert einfügen. Ohne den Meldeschlüssel darin wird die Meldung automatisch geschlossen. / Tinkerbox → »Einstellungen« → »Debug-Log« → »Fehler melden« puts the report on the clipboard and opens this form: paste it here unchanged. Without the report key in it the report is closed automatically."
       render: text
     validations:
       required: true
