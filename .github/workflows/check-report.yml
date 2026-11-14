@@ -1,0 +1,26 @@
+# Copyright 2026 Vivian Voss. Code by Vivian Voss. Licensed under the Tinkerbox Licence 1.0.
+# SPDX-License-Identifier: LicenseRef-Tinkerbox-1.0
+# Scope: Every beta report on VivianVossNet/tinkerbox.pub is checked for the report key the app writes; one without a valid key is closed ({K0198}).
+name: Check beta report
+on:
+  issues:
+    types: [opened, edited]
+permissions:
+  issues: write
+  contents: read
+jobs:
+  check:
+    if: contains(github.event.issue.labels.*.name, 'beta')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the report key
+        run: python3 .github/scripts/check-report.py
+        env:
+          REPORT_SECRET: ${{ secrets.REPORT_SECRET }}
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_STATE: ${{ github.event.issue.state }}
+          ISSUE_CREATED: ${{ github.event.issue.created_at }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
