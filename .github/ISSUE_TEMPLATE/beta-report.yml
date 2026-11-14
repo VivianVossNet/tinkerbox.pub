@@ -1,6 +1,6 @@
 # Copyright 2026 Vivian Voss. Code by Vivian Voss. Licensed under the Tinkerbox Licence 1.0.
 # SPDX-License-Identifier: LicenseRef-Tinkerbox-1.0
-# Scope: The beta testers' report on VivianVossNet/tinkerbox.pub ({K0197}), German and English in one form.
+# Scope: The beta testers' report on VivianVossNet/tinkerbox.pub ({K0197}, {K0198}), German and English in one form, its log carrying the report key.
 name: "Beta: Fehler melden / Report a fault"
 description: "Etwas klappt nicht mit Tinkerbox Beta? / Something does not work in Tinkerbox Beta?"
 title: "[Beta] "
@@ -41,7 +41,7 @@ body:
     id: log
     attributes:
       label: "Debug-Log"
-      description: "Tinkerbox → Einstellungen → Debug-Log → Kopieren, dann hier einfügen. / Tinkerbox → »Einstellungen« → »Debug-Log« → »Kopieren«, then paste here."
+      description: "Am einfachsten: Tinkerbox → Einstellungen → Debug-Log → »Fehler melden«, das füllt dieses Feld. Oder dort »Kopieren« und hier unverändert einfügen. Ohne den Meldeschlüssel darin wird die Meldung automatisch geschlossen. / Easiest: Tinkerbox → »Einstellungen« → »Debug-Log« → »Fehler melden« fills this field. Or »Kopieren« there and paste it here unchanged. Without the report key in it the report is closed automatically."
       render: text
     validations:
       required: true
