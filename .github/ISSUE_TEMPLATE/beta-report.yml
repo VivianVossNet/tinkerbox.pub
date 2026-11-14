@@ -1,0 +1,52 @@
+# Copyright 2026 Vivian Voss. Code by Vivian Voss. Licensed under the Tinkerbox Licence 1.0.
+# SPDX-License-Identifier: LicenseRef-Tinkerbox-1.0
+# Scope: The beta testers' report on VivianVossNet/tinkerbox.pub ({K0197}), German and English in one form.
+name: "Beta: Fehler melden / Report a fault"
+description: "Etwas klappt nicht mit Tinkerbox Beta? / Something does not work in Tinkerbox Beta?"
+title: "[Beta] "
+labels: ["beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Danke fürs Testen!** Bitte keine Charakternamen, und Screenshots nur ohne deinen Charakter.
+        **Thanks for testing!** Please no character names, and screenshots only without your character.
+  - type: dropdown
+    id: system
+    attributes:
+      label: "System"
+      options:
+        - "Windows"
+        - "macOS"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: "Was hast du gemacht? / What did you do?"
+      placeholder: "z. B. Entdecken → Questie → Installieren / e.g. Discover → Questie → Install"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Was hast du erwartet? / What did you expect?"
+  - type: textarea
+    id: happened
+    attributes:
+      label: "Was ist passiert? / What happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: "Debug-Log"
+      description: "Tinkerbox → Einstellungen → Debug-Log → Kopieren, dann hier einfügen. / Tinkerbox → »Einstellungen« → »Debug-Log« → »Kopieren«, then paste here."
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: pictures
+    attributes:
+      label: "Screenshots (optional)"
+      description: "Ohne deinen Charakter. / Without your character."
